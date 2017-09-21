@@ -1,0 +1,26 @@
+uuid: a05c12b2-a504-4683-b2c0-623615c4b681
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - corporate_solution
+_core:
+  default_config_hash: EqwG5dMtA9YvbNF3MaYQwRdEuJIb1sTAjZzN0PbZOAs
+id: corporate_solution_footer
+theme: corporate_solution
+region: footer
+weight: -3
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

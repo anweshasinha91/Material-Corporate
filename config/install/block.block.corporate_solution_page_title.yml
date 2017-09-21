@@ -1,0 +1,20 @@
+uuid: 6c2dbffa-a61b-4f4b-88bf-e1db4dc955f0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - corporate_solution
+_core:
+  default_config_hash: zi8BYNgxjz5ew8ihNDfnBFXLJ5jCW-UNbCQ3mLUM_kE
+id: corporate_solution_page_title
+theme: corporate_solution
+region: page_title
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

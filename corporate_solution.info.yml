@@ -1,0 +1,17 @@
+name: Corporate Solution
+type: theme
+description: Theme for corporate site
+package: Other
+core: 8.x
+libraries:
+  - corporate_solution/global-styling
+ 
+base theme: false
+
+regions:
+  header: Header
+  primary_menu: Primary Menu
+  content: Content
+  side_left_bar: Side Left Bar
+  side_right_bar: Side Right Bar
+  footer: Footer

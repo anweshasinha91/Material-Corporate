@@ -1,0 +1,25 @@
+uuid: 3430a087-6449-4011-89ca-992693844d8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corporate_solution
+_core:
+  default_config_hash: I1mVPaNy2HynGDxN6quW2alTxwh2wpLrepeJZEQb5ww
+id: corporate_solution_branding
+theme: corporate_solution
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

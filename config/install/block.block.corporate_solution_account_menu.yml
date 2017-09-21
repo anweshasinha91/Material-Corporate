@@ -1,0 +1,26 @@
+uuid: 16eadcba-f411-41ab-8858-efc86ffc943a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - corporate_solution
+_core:
+  default_config_hash: _nAXC7GnTksGBQGHa4izzWtjiIB4BmokhG3r2X69Ew8
+id: corporate_solution_account_menu
+theme: corporate_solution
+region: primary_menu
+weight: -2
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

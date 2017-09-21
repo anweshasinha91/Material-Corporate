@@ -1,0 +1,24 @@
+uuid: e5574ac9-4ed4-459d-a7af-85864fde7e10
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - corporate_solution
+id: tools_2
+theme: corporate_solution
+region: side_right_bar
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

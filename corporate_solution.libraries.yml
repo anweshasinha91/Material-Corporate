@@ -1,0 +1,12 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      assets/css/layout.css: {}
+      assets/css/font-face.css: {}
+
+  dependencies:
+    - core/jquery
+
+  js:
+    assets/js/my_js.js: {}
