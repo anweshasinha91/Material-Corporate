@@ -148,16 +148,32 @@ header li a:hover::before,header li a:hover::after {
 }
 .content {
     width: 100vw;
-    height: auto;
-    min-height: 500px;
     background-color: rgba(190,190,190,0.25);
     position: relative;
 }
 .content .main-page-content {
     background-color: #ffffff;
-    position: absolute;
-    width: 100%;
     padding: 16px;
+    height: auto;
+    min-height: 300px;
+}
+.page-title-layout {
+    position: absolute;
+    min-width: 200px;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 50%;
+    text-align: center;
+}
+.page-title{
+    margin: 0;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 .search-block {
     width: 300px;

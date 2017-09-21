@@ -11,6 +11,7 @@ base theme: false
 regions:
   header: Header
   primary_menu: Primary Menu
+  page_title: Page Title
   content: Content
   side_left_bar: Side Left Bar
   side_right_bar: Side Right Bar
