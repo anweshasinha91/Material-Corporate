@@ -1,18 +1,18 @@
 corporate_solution.mobile:
   label: mobile
-  mediaQuery: 'all and (max-width: 500px)'
+  mediaQuery: 'all and (max-width: 599px)'
   weight: 0
   multipliers:
     - 1x
 corporate_solution.tab:
   label: tab
-  mediaQuery: 'all and (min-width: 501px) and (max-width: 900px)'
+  mediaQuery: 'all and (min-width: 600px) and (max-width: 1023px)'
   weight: 1
   multipliers:
     - 1x
 corporate_solution.desktop:
   label: desktop
-  mediaQuery: 'all and (min-width: 901px)'
+  mediaQuery: 'all and (min-width: 1024px)'
   weight: 2
   multipliers:
     - 1x

@@ -4,9 +4,10 @@ global-styling:
     theme:
       assets/css/layout.css: {}
       assets/css/font-face.css: {}
+      assets/css/icon.css: {}
 
   dependencies:
     - core/jquery
 
   js:
-    assets/js/my_js.js: {}
+    assets/js/custom_js.js: {}
