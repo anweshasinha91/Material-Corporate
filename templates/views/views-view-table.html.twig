@@ -39,7 +39,8 @@
     sticky ? 'sticky-enabled',
   ]
 %}
-<table{{ attributes.addClass(classes) }}>
+<div class="responsive-table">
+    <table{{ attributes.addClass(classes) }}>
   {% if caption_needed %}
     <caption>
     {% if caption %}
@@ -124,3 +125,4 @@
     {% endfor %}
   </tbody>
 </table>
+</div>

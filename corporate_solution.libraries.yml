@@ -11,3 +11,4 @@ global-styling:
 
   js:
     assets/js/custom_js.js: {}
+    assets/js/textfield.js: {}
