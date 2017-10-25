@@ -183,7 +183,7 @@ header.desktop-header .navigation-menu li a:hover::before,header.desktop-header 
     position: relative;
     margin: 16px 0;
 }
-.views-exposed-form .js-form-item {
+.js-form-item, #user-login-form .js-form-item{
     width: calc(50% - 32px);
     display: block;
     float: left;
@@ -192,7 +192,13 @@ header.desktop-header .navigation-menu li a:hover::before,header.desktop-header 
     box-sizing: border-box;
     margin: 0 16px 16px 16px;
 }
-.views-exposed-form .js-form-item label {
+#user-login-form .js-form-item{
+    width: 100%;
+}
+#user-login-form .description {
+    display: none;
+}
+.js-form-item label {
     position: absolute;
     bottom: 0;
     top: 1px;
@@ -203,7 +209,8 @@ header.desktop-header .navigation-menu li a:hover::before,header.desktop-header 
     color: rgb(200, 200, 200);
     box-sizing: border-box;
 }
-.views-exposed-form .js-form-item label::before, .views-exposed-form .js-form-item label::after {
+.js-form-item label::before,
+.js-form-item label::after{
     content: '';
     position: absolute;
     width : 0;
@@ -212,28 +219,31 @@ header.desktop-header .navigation-menu li a:hover::before,header.desktop-header 
     transition: all 0.5s ease;
     bottom: 0;
 }
-.views-exposed-form .js-form-item label::before {
+.js-form-item label::before {
     left: 50%;
 }
-.views-exposed-form .js-form-item label::after {
+.js-form-item label::after {
     right: 50%;
 }
-.views-exposed-form .js-form-item.is-focused label::after, .views-exposed-form .js-form-item.is-focused label::before {
+.js-form-item.is-focused label::after, .js-form-item.is-focused label::before {
     width: 50%;
     visibility: visible;
 }
-.views-exposed-form .js-form-item.is-dirty label {
+.js-form-item.is-dirty label {
     top: -30px;
     color: #424242;
 }
-.views-exposed-form input[type=text] {
+input[type=text], input[type=password]{
     width: 100%;
     padding-left: 16px;
     position: relative;
     border:none;
     font-size: 12px;
 }
-.views-exposed-form input[type=text]:focus, .views-exposed-form .js-form-item label:focus, .views-exposed-form .js-form-item:hover, form[id^='views-'] .js-form-wrapper select:focus{
+input[type=text]:focus, .js-form-item label:focus,
+.js-form-item:hover,
+form[id^='views-'] .js-form-wrapper select:focus,
+input[type=password]:focus{
     outline: none;
 }
 .button {
@@ -255,6 +265,10 @@ form[id^='views-'] .js-form-wrapper select {
     border-bottom: 1px solid rgba(208,41,46, 0.12);
     background-color: transparent;
     font-size: 12px;
+}
+#user-login-form {
+    width: 500px;
+    margin: 10px auto;
 }
 @media (min-width: 1200px) {
     .col-md-1 {

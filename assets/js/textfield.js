@@ -177,10 +177,15 @@
             console.log($textfileds)
             Plugin.call($textfileds)
         });
+        $('.form-item input[type="password"]').each(function () {
+            var $textfileds = $(this).parent();
+            console.log($textfileds)
+            Plugin.call($textfileds)
+        });
     });
 
     $.fn.textfieldPlugin = function() {
-        $('.form-type-textfield').each(function () {
+        $('.form-item').each(function () {
             var $textfileds = $(this);
             Plugin.call($textfileds)
         });
