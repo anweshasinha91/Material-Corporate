@@ -46,7 +46,7 @@ header.desktop-header {
     position: relative;
 }
 .container {
-    width: 1224px;
+    width: 1200px;
     position: relative;
     height: 100%;
     margin: 0 auto;
@@ -83,7 +83,7 @@ header.desktop-header {
 }
 .site-name {
     position: relative;
-    font-size: 24px;
+    font-size: 22px;
     color: #ffffff;
 }
 .spacer {
@@ -94,6 +94,7 @@ header.desktop-header {
 .main-navigation > div {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 header.desktop-header .navigation-menu,header.desktop-header .menu-base-theme {
     display: flex;
@@ -172,11 +173,13 @@ header.desktop-header .navigation-menu li a:hover::before,header.desktop-header 
     text-align: center;
 }
 .page-title{
-    margin: 0;
+    margin: 0 auto;
     color: #ffffff;
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
+    width: 600px;
+    word-break: break-all;
 }
 
 .views-exposed-form {
@@ -192,8 +195,16 @@ header.desktop-header .navigation-menu li a:hover::before,header.desktop-header 
     box-sizing: border-box;
     margin: 0 16px 16px 16px;
 }
-#user-login-form .js-form-item{
+#user-login-form .js-form-item, form[id^='views-form'] .js-form-item {
     width: 100%;
+}
+#user-login-form .js-form-item {
+    margin: 16px 0;
+}
+
+form[id^='views-form'] .js-form-item {
+    padding: 0;
+    margin: 0;
 }
 #user-login-form .description {
     display: none;
@@ -259,7 +270,7 @@ input[type=password]:focus{
 }
 #user-login-form .button {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 form[id^='views-'] .js-form-wrapper select {
     width: 100%;
@@ -270,59 +281,87 @@ form[id^='views-'] .js-form-wrapper select {
     background-color: transparent;
     font-size: 12px;
 }
+form[id^='views-'] .js-form-type-select label {
+    position: relative;
+    border: 0;
+    padding: 0;
+}
 #user-login-form {
     width: 500px;
     margin: 10px auto;
+}
+.views-view-grid .views-col {
+    padding: 16px;
+    box-sizing: border-box;
+}
+.views-view-grid .views-col .views-field {
+    text-align: center;
+    padding: 16px;
+}
+.views-view-grid .views-col .view-contents {
+    border: 1px solid rgba(0,0,0,.12);
 }
 @media (min-width: 1200px) {
     .col-md-1 {
         width: 8.33333%;
         flex: 0 0 8.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-md-2 {
         width: 16.66667%;
         flex: 0 0 16.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-md-3 {
         width: 25%;
         flex: 0 0 25%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-md-4 {
         width: 33.33333%;
         flex: 0 0 33.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-md-5 {
         width: 41.66667%;
         flex: 0 0 41.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-md-6 {
         width: 50%;
         flex: 0 0 50%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-md-7 {
         width: 58.33333%;
         flex: 0 0 58.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-md-8 {
         width: 66.66667%;
         flex: 0 0 66.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-md-9 {
         width: 75%;
         flex: 0 0 75%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-md-10 {
         width: 83.33333%;
         flex: 0 0 83.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-md-11 {
         width: 91.66667%;
         flex: 0 0 91.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-md-12 {
         width: 100%;
         flex: 0 0 100%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .mobile-header,.mobile-header-content {
         display: none;
     }
@@ -332,51 +371,63 @@ form[id^='views-'] .js-form-wrapper select {
     .col-sm-1 {
         width: 8.33333%;
         flex: 0 0 8.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-sm-2 {
         width: 16.66667%;
         flex: 0 0 16.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-sm-3 {
         width: 25%;
         flex: 0 0 25%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-sm-4 {
         width: 33.33333%;
         flex: 0 0 33.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-sm-5 {
         width: 41.66667%;
         flex: 0 0 41.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-sm-6 {
         width: 50%;
         flex: 0 0 50%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-sm-7 {
         width: 58.33333%;
         flex: 0 0 58.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-sm-8 {
         width: 66.66667%;
         flex: 0 0 66.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-sm-9 {
         width: 75%;
         flex: 0 0 75%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-sm-10 {
         width: 83.33333%;
         flex: 0 0 83.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-sm-11 {
         width: 91.66667%;
         flex: 0 0 91.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-sm-12 {
         width: 100%;
         flex: 0 0 100%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .container {
         width: 100vw;
     }
@@ -450,10 +501,10 @@ form[id^='views-'] .js-form-wrapper select {
         justify-content: flex-start;
     }
     .mobile-header .row .col-xs-2 {
-        padding: 0;
+        padding: 16px 8px 16px 16px;
     }
     .mobile-header .row .col-xs-8 {
-        padding: 0;
+        padding: 8px 8px 0 8px;
     }
     .logo-header-mobile {
         width: 100%;
@@ -462,20 +513,19 @@ form[id^='views-'] .js-form-wrapper select {
         position: relative;
         margin: 4px 0;
         padding: 0 !important;
+        color: #ffffff;
     }
-    .logo-header-mobile img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+    .logo-header-mobile .material-icons {
+        font-size: 32px;
     }
     .site-name-mobile {
         width: 100%;
         color: #fff;
         position: relative;
-        font-size: 19px;
-        height: 66px;
+        font-size: 22px;
+        height: 60px;
         padding: 0;
-        line-height: 66px;
+        line-height: 60px;
     }
     .page-title-layout {
         bottom: 10%;
@@ -489,51 +539,63 @@ form[id^='views-'] .js-form-wrapper select {
     .col-xs-1 {
         width: 8.33333%;
         flex: 0 0 8.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-xs-2 {
         width: 16.66667%;
         flex: 0 0 16.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-xs-3 {
         width: 25%;
         flex: 0 0 25%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-xs-4 {
         width: 33.33333%;
         flex: 0 0 33.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-xs-5 {
         width: 41.66667%;
         flex: 0 0 41.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-xs-6 {
         width: 50%;
         flex: 0 0 50%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-xs-7 {
         width: 58.33333%;
         flex: 0 0 58.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-xs-8 {
         width: 66.66667%;
         flex: 0 0 66.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-xs-9 {
         width: 75%;
         flex: 0 0 75%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-xs-10 {
         width: 83.33333%;
         flex: 0 0 83.33333%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-xs-11 {
         width: 91.66667%;
         flex: 0 0 91.66667%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .col-xs-12 {
         width: 100%;
         flex: 0 0 100%;
-        padding: 0 16px; }
+        padding: 0 16px;
+        box-sizing: border-box;}
     .container {
         width: 100%;
     }
@@ -607,7 +669,7 @@ form[id^='views-'] .js-form-wrapper select {
         justify-content: flex-start;
     }
     .mobile-header .row .col-xs-2 {
-        padding: 8px 8px 0 8px;
+        padding: 16px 8px 16px 16px;
     }
     .mobile-header .row .col-xs-8 {
         padding: 8px 8px 0 8px;
@@ -619,11 +681,10 @@ form[id^='views-'] .js-form-wrapper select {
         position: relative;
         margin: 2px 0;
         padding: 0 !important;
+        color: #ffffff;
     }
-    .logo-header-mobile img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+    .logo-header-mobile .material-icons {
+        font-size: 32px;
     }
     .site-name-mobile {
         width: 100%;
@@ -631,7 +692,7 @@ form[id^='views-'] .js-form-wrapper select {
         position: relative;
         font-size: 19px;
         height: 66px;
-        padding: 16px;
+        padding: 16px 0;
     }
     .page-title-layout {
         bottom: 10%;
@@ -654,6 +715,18 @@ form[id^='views-'] .js-form-wrapper select {
     }
     .views-exposed-form .js-form-item label {
         width: 100%;
+        padding: 0;
+    }
+    #user-login-form {
+        width: 100%;
+    }
+    #user-login-form .js-form-item {
+        margin: 16px 0;
+    }
+    #user-login-form .js-form-item label {
+        padding: 16px 0;
+    }
+    #user-login-form input[type=text], #user-login-form input[type=password] {
         padding: 0;
     }
 }
