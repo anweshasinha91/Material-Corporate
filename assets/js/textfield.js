@@ -174,12 +174,26 @@
     $(window).on('load', function () {
         $('.form-item input[type="text"]').each(function () {
             var $textfileds = $(this).parent();
-            console.log($textfileds)
             Plugin.call($textfileds)
         });
         $('.form-item input[type="password"]').each(function () {
             var $textfileds = $(this).parent();
-            console.log($textfileds)
+            Plugin.call($textfileds)
+        });
+        $('.form-item input[type="email"]').each(function () {
+            var $textfileds = $(this).parent();
+            Plugin.call($textfileds)
+        });
+        $('.form-item input[type="date"]').each(function () {
+            var $textfileds = $(this).parent();
+            Plugin.call($textfileds)
+        });
+        $('.form-item input[type="url"]').each(function () {
+            var $textfileds = $(this).parent();
+            Plugin.call($textfileds)
+        });
+        $('.form-item textarea').each(function () {
+            var $textfileds = $(this).parent().parent();
             Plugin.call($textfileds)
         });
     });
