@@ -437,6 +437,9 @@ ul.links.inline li {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.main-page-content header {
+    display: none;
+}
 @media (min-width: 1200px) {
     .col-md-1 {
         width: 8.33333%;
