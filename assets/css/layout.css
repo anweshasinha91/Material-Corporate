@@ -163,12 +163,12 @@ header.desktop-header .menu-base-theme li a:hover::before,  header.desktop-heade
 .content {
     width: 100%;
     position: relative;
+    min-height: 500px;
 }
 .content .main-page-content {
     background-color: #ffffff;
     padding: 16px;
     height: auto;
-    min-height: 300px;
 }
 .page-title-layout {
     position: absolute;
@@ -399,6 +399,43 @@ ul.links.inline li {
     border-top: 1px solid rgba(186, 186, 186, 0.78);
     margin-top: 32px;
     padding: 0 16px;
+}
+.footer {
+    width: 100%;
+    height: 128px;
+    background-color: #1b1b1b;
+}
+.copyright {
+    text-align: center;
+    color: white;
+    line-height: 64px;
+
+}
+.follow {
+    width: 100%;
+    height: 64px;
+}
+.social-icons {
+    width: 240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px 0;
+}
+.icons {
+    width : 20px;
+    height: 20px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: relative;
+}
+.icons img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 @media (min-width: 1200px) {
     .col-md-1 {
@@ -645,6 +682,9 @@ ul.links.inline li {
         padding-left: 0;
     }
     .author-comments .content p {
+        width: 100%;
+    }
+    #contact-message-feedback-form {
         width: 100%;
     }
 }

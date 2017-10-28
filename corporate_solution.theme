@@ -42,6 +42,10 @@ function corporate_solution_preprocess_page(array &$variables) {
         $variables['logo'] = $base_url.'/'.drupal_get_path('theme','corporate_solution') . '/logo.png';
         $variables['logo'] = str_replace('.svg', '.png', $variables['logo']);
         $variables['site_name'] = \Drupal::config('system.site')->get('name');
+        $variables['facebook'] = $base_url.'/'.drupal_get_path('theme','corporate_solution') . '/facebook.png';
+        $variables['linkedin'] = $base_url.'/'.drupal_get_path('theme','corporate_solution') . '/linkedin.png';
+        $variables['twitter'] = $base_url.'/'.drupal_get_path('theme','corporate_solution') . '/twitter.png';
+        $variables['google_plus'] = $base_url.'/'.drupal_get_path('theme','corporate_solution') . '/google-plus.png';
 }
 
 /**
