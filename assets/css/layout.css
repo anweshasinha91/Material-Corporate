@@ -440,10 +440,23 @@ ul.links.inline li {
 .main-page-content header {
     display: none;
 }
-.node__content {
+.node__content .row {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+}
+.node__content .row p {
+    text-align: justify;
+}
+.node__content .col-md-4 img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.views-view-grid img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 @media (min-width: 1200px) {
     .col-md-1 {
@@ -695,6 +708,9 @@ ul.links.inline li {
     #contact-message-feedback-form {
         width: 100%;
     }
+    .node__content .row {
+        display: block;
+    }
 }
 
 @media (max-width: 599px) {
@@ -899,5 +915,8 @@ ul.links.inline li {
     }
     .indented {
         padding-left: 0;
+    }
+    .node__content .row {
+        display: block;
     }
 }
