@@ -160,7 +160,7 @@ header.desktop-header .menu-base-theme li a:hover::before,  header.desktop-heade
     background: linear-gradient(180deg, rgba(19,136,229,1) 0%, rgb(40, 168, 244) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23D5F4', endColorstr='#1388E5',GradientType=1 ); /* ie6-9 */
 }
-.content {
+#page > .content {
     width: 100%;
     position: relative;
     min-height: 500px;
@@ -439,6 +439,11 @@ ul.links.inline li {
 }
 .main-page-content header {
     display: none;
+}
+.node__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 @media (min-width: 1200px) {
     .col-md-1 {

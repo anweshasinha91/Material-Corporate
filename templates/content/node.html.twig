@@ -87,14 +87,18 @@
   {% if display_submitted %}
     <footer class="comment-submitted">
       <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
         {{ metadata }}
       </div>
     </footer>
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
+    <div class="col-md-4">
+        {{ content.field_image }}
+    </div>
+    <div class="col-md-8">
+        {{ content|without('field_image')|without('field_comment') }}
+    </div>
   </div>
 
 </article>
