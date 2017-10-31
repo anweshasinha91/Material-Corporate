@@ -66,7 +66,7 @@
                         <i class="material-icons">menu</i>
                     </div>
                 </div>
-                <div class="col-xs-8">
+                <div class="col-xs-8 col-sm-8">
                     <div class="site-name-mobile">
                         {{ site_name }}
                     </div>
@@ -96,6 +96,7 @@
                 </div>
             </div>
         </header>
+        {% if not node %}
         <div class="jumbotron">
             <div class="container">
                 {{ page.page_title }}
@@ -108,6 +109,15 @@
                 </div>
             </div>
         </div>
+        {% else %}
+            <div class="node-details">
+                <div class="container">
+                    <div class="main-page-content">
+                        {{ page.content }}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
         <div class="footer">
             <div class="follow">
                 <div class="social-icons">

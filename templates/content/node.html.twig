@@ -94,10 +94,17 @@
 
   <div{{ content_attributes.addClass('node__content') }}>
     <div class="row">
-      <div class="col-md-4 col-xs-12 col-sm-12">
-          {{ content.field_image }}
+      <div class="col-md-12 col-xs-12 col-sm-12">
+            <div class="field__image">
+                {% if node.field_image.value is not empty %}
+                  {{ content.field_image }}
+                {% endif %}
+            </div>
+        <div class="node__title">
+            {{ label }}
+        </div>
       </div>
-      <div class="col-md-8 col-xs-12 col-sm-12">
+      <div class="col-md-12 col-xs-12 col-sm-12">
           {{ content|without('field_image')|without('field_comment') }}
       </div>
     </div>

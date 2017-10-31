@@ -12,8 +12,36 @@ jQuery(document).ready(function () {
         jQuery('.mobile-close-drawer').css("background-color", "transparent");
         jQuery('.mobile-close-drawer').css("display", "none");
     });
-    jQuery('.node__content .col-md-4 img').parent().css('text-align','center');
     if( jQuery('.node__content section').children().length == 0) {
         jQuery('.node__content section').css('display','none');
     }
+    jQuery('.node__content .row .field__image').each(function () {
+        var imgEl3 = jQuery(this).find('img');
+        if(imgEl3.length > 0)
+        {
+            var img_element = imgEl3.parent();
+            var src = imgEl3.attr('src');
+            var mq = window.matchMedia("(max-width: 599px)");
+            jQuery(img_element).css('background-image', 'url('+ src +')');
+            jQuery(img_element).css('width', '100%');
+            jQuery(img_element).css('background-size', '100%');
+            jQuery(img_element).css('background-position', 'center center');
+            jQuery(img_element).css('background-repeat', 'no-repeat');
+            if(mq.matches)
+            {
+                jQuery(img_element).css('height', '300px');
+            }
+            else
+            {
+                jQuery(img_element).css('height', '450px');
+            }
+            imgEl3.hide();
+        }
+        else
+        {
+            imgEl3.hide();
+            jQuery(this).css('width', '100%');
+            jQuery(this).css('height', '160px');
+        }
+    })
 })
