@@ -41,7 +41,15 @@ jQuery(document).ready(function () {
         {
             imgEl3.hide();
             jQuery(this).css('width', '100%');
-            jQuery(this).css('height', '160px');
+            var mq = window.matchMedia("(max-width: 599px)");
+            if(mq.matches)
+            {
+                jQuery('.node__content .field__image').css('height', '100px');
+            }
+            else
+            {
+                jQuery('.node__content .field__image').css('height', '160px');
+            }
         }
     })
 })
