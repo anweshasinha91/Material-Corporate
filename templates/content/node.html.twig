@@ -98,6 +98,8 @@
             <div class="field__image">
                 {% if node.field_image.value is not empty %}
                   {{ content.field_image }}
+                {% else %}
+                    <img src="{{ default_image }}" alt="default">
                 {% endif %}
             </div>
         <div class="node__title">

@@ -464,6 +464,7 @@ ul.links.inline li {
 }
 .node__content .row .col-md-12.col-xs-12.col-sm-12:nth-child(1) {
     position: relative;
+    margin-bottom: 16px;
 }
 .node__content .node__title {
     width: 100%;

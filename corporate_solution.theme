@@ -98,6 +98,9 @@ function corporate_solution_theme_suggestions_fieldset_alter(array &$suggestions
 function corporate_solution_preprocess_node(array &$variables) {
   // Default to turning off byline/submitted.
   //$variables['display_submitted'] = FALSE;
+  global $base_url, $base_path;
+  $variables['default_image'] = $base_url.'/'.drupal_get_path('theme','corporate_solution') . '/assets/images/bg-image.png';
+
 }
 
 /**

@@ -17,8 +17,6 @@ jQuery(document).ready(function () {
     }
     jQuery('.node__content .row .field__image').each(function () {
         var imgEl3 = jQuery(this).find('img');
-        if(imgEl3.length > 0)
-        {
             var img_element = imgEl3.parent();
             var src = imgEl3.attr('src');
             var mq = window.matchMedia("(max-width: 599px)");
@@ -36,20 +34,5 @@ jQuery(document).ready(function () {
                 jQuery(img_element).css('height', '450px');
             }
             imgEl3.hide();
-        }
-        else
-        {
-            imgEl3.hide();
-            jQuery(this).css('width', '100%');
-            var mq = window.matchMedia("(max-width: 599px)");
-            if(mq.matches)
-            {
-                jQuery('.node__content .field__image').css('height', '100px');
-            }
-            else
-            {
-                jQuery('.node__content .field__image').css('height', '160px');
-            }
-        }
     })
 })
