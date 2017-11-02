@@ -67,6 +67,6 @@
         {{ label }}
     </div>
     <div class="teaser-body">
-        {{ content|without('label')  }}
+        {{ content|without('field_image')|without('field_comment') }}
     </div>
 </div>

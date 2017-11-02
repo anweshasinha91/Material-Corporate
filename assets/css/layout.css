@@ -30,8 +30,12 @@ th {
     font-weight: 400;
     text-transform: uppercase;
 }
+td p {
+    margin: 0;
+}
 td {
     text-align: center;
+    padding: 16px 0;
 }
 table, th, td {
     border: 1px solid rgba(0, 0, 0, 0.17);
@@ -505,6 +509,9 @@ ul.links.inline li {
 .node-display-mode-teaser {
     flex-direction: row;
     flex-wrap: wrap;
+}
+.path-contact .form-actions.js-form-wrapper.form-wrapper {
+    text-align: center;
 }
 @media (min-width: 1200px) {
     .col-md-1 {
