@@ -55,7 +55,7 @@ header.desktop-header {
     height: 100%;
     margin: 0 auto;
 }
-.row {
+.row, .node-display-mode-teaser {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -308,15 +308,30 @@ form[id^='views-'] .js-form-type-select label {
     width: 500px;
     margin: 10px auto;
 }
-.views-view-grid .views-col {
+.views-view-grid .views-col,.node-display-mode-teaser .views-row {
     padding: 16px;
     box-sizing: border-box;
 }
-.views-view-grid .views-col .views-field {
+.views-view-grid .views-col .views-field,.teaser-label,.teaser-body {
     text-align: center;
     padding: 16px;
 }
-.views-view-grid .views-col .view-contents {
+.teaser-body {
+    text-align: justify;
+}
+.teaser-label {
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: #45A3F2;
+    color: #ffffff;
+}
+.teaser-body p {
+    color: #929292;
+    font-size: 14px;
+    font-weight: 100;
+}
+.views-view-grid .views-col .view-contents,.teaser-node {
     border: 1px solid rgba(0,0,0,.12);
 }
 ul.pager__items, ul.js-pager__items {
@@ -391,6 +406,9 @@ li.pager__item, ul.js-pager__items li {
 }
 ul.links.inline {
     display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
 }
 ul.links.inline li {
     padding: 0 16px;
@@ -403,7 +421,7 @@ ul.links.inline li {
     height: 60px !important;
     margin: 0 auto;
 }
-.node__content section {
+.path-node .node__content section {
     border-top: 1px solid rgba(186, 186, 186, 0.78);
     margin-top: 32px;
     padding: 0 16px;
@@ -449,7 +467,7 @@ ul.links.inline li {
     display: none;
 }
 
-.node__content .row p {
+.path-node .node__content .row p {
     text-align: justify;
     font-size: 16px;
     font-weight: 300;
@@ -459,14 +477,14 @@ ul.links.inline li {
     height: auto;
     object-fit: contain;
 }
-.node__content .row {
+.path-node .node__content .row {
     display: block;
 }
-.node__content .row .col-md-12.col-xs-12.col-sm-12:nth-child(1) {
+.path-node .node__content .row .col-md-12.col-xs-12.col-sm-12:nth-child(1) {
     position: relative;
     margin-bottom: 16px;
 }
-.node__content .node__title {
+.path-node .node__content .node__title {
     width: 100%;
     height: 80px;
     color: #ffffff;
@@ -484,7 +502,10 @@ ul.links.inline li {
     text-transform: uppercase;
     line-height: 80px;
 }
-
+.node-display-mode-teaser {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 @media (min-width: 1200px) {
     .col-md-1 {
         width: 8.33333%;
@@ -511,7 +532,7 @@ ul.links.inline li {
         flex: 0 0 41.66667%;
         padding: 0 16px;
         box-sizing: border-box;}
-    .col-md-6 {
+    .col-md-6, .node-display-mode-teaser .views-row {
         width: 50%;
         flex: 0 0 50%;
         padding: 0 16px;
@@ -549,6 +570,9 @@ ul.links.inline li {
     .mobile-header,.mobile-header-content {
         display: none !important;
     }
+    .node-display-mode-teaser .views-row {
+        padding: 16px;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 1199px) {
@@ -577,7 +601,7 @@ ul.links.inline li {
         flex: 0 0 41.66667%;
         padding: 0 16px;
         box-sizing: border-box;}
-    .col-sm-6 {
+    .col-sm-6, .node-display-mode-teaser .views-row {
         width: 50%;
         flex: 0 0 50%;
         padding: 0 16px;
@@ -735,7 +759,7 @@ ul.links.inline li {
     #contact-message-feedback-form {
         width: 100%;
     }
-    .node__content .row {
+    .path-node .node__content .row {
         display: block;
     }
     .views-view-grid img {
@@ -820,7 +844,7 @@ ul.links.inline li {
         flex: 0 0 91.66667%;
         padding: 0 16px;
         box-sizing: border-box;}
-    .col-xs-12 {
+    .col-xs-12,.node-display-mode-teaser .views-row {
         width: 100%;
         flex: 0 0 100%;
         padding: 0 16px;
@@ -988,12 +1012,15 @@ ul.links.inline li {
     .indented {
         padding-left: 0;
     }
-    .node__content .row {
+    .path-node .node__content .row {
         display: block;
     }
-    .node__content .node__title {
+    .path-node .node__content .node__title {
         height: 60px;
         line-height: 60px;
         font-size: 20px;
+    }
+    .node-display-mode-teaser .views-row {
+        padding: 16px;
     }
 }
